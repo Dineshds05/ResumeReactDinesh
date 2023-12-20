@@ -8,12 +8,12 @@ function Headernav({Title,Description,children}) {
             <div className="container">
             <header>
            
-            <Box sx={{ flexGrow: 1 }}>
+            
           <AppBar position="static">
             <Toolbar>
         <Typography variant="h5"
             component="div"
-            sx={{flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
+            sx={{flexGrow: 0.5, display: { xs: 'none', sm: 'block' } }}>
          R.DINESH KUMAR
         </Typography>
         
@@ -45,7 +45,6 @@ function Headernav({Title,Description,children}) {
         </Stack>
       </Toolbar>
     </AppBar>
-    </Box>
     </header>
     <div className="main-container">
             <main className="items">

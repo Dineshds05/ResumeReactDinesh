@@ -5,7 +5,7 @@ function Skills(){
         <div>
         <Headernav/>
         <div className="Text-style">
-        <h2><u>Skills</u></h2>
+        <h2 className="pHead"><u>Skills</u></h2>
         <ul>
             <li>Languages: JavaScript (ES6+), HTML5, CSS3,</li>
             <li>Front-End: React.js, Redux, HTML, CSS, Bootstrap,</li>

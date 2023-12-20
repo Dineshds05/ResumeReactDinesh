@@ -5,7 +5,7 @@ function Biodata(){
         <div>
         <Headernav/>
         <div className="Text-style">
-        <h2>Personal Details</h2>
+        <h2 className="pHead"><u>Personal Details</u></h2>
         <ul>
             <li>Date of Birth : 06.06.1997</li>
             <li>Gender : Male</li>

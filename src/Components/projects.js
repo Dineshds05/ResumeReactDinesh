@@ -5,7 +5,7 @@ function Projects(){
         <div>
         <Headernav/>
         <div className="Text-style">
-        <h2><u>Front-End React Projects</u></h2>
+        <h2 className="pHead"><u>Front-End React Projects</u></h2>
         <ul>
             <li>Crud Application student management with routers - <a href="https://musical-moxie-42a69d.netlify.app/" target="_blank">Front-End Deployed URL</a></li>
             <li>Fetch API with simple webcode - <a href="https://loquacious-dusk-71e4c1.netlify.app" target="_blank">Front-End Deployed URL</a></li>

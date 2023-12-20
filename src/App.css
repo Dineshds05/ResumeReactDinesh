@@ -1,3 +1,7 @@
+body{
+  background-image: url("https://files.123freevectors.com/wp-content/original/108129-light-blue-wave.jpg");
+ background-size: cover;
+}
 .image{
     position: relative;
     background-image: url("https://www.michaelpage.co.in/sites/michaelpage.co.in/files/styles/advice_node_desktop/public/2023-05/winning%20resume.jpg.webp?itok=QebzQjeT");
@@ -19,6 +23,7 @@
     font-size: 30px;
 }
 .Text-style{
+    margin-top: 3%;
     margin-left: 10%;
     line-height: 2rem;
     font-size: 15px;
@@ -56,3 +61,10 @@ h1{
   .gap{
     margin-left: 1rem;
   }
+ h1,h2,h3{
+  text-align: center;
+ }
+ .pHead{
+  text-align: left;
+ }
+ 
