@@ -1,58 +1,57 @@
-import React from "react";
-import { AppBar, Box, Button, Stack, Toolbar, Typography } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+
 
 function Headernav({Title,Description,children}) {
-        const navigate = useNavigate()
         return (
-            <div className="container">
-            <header>
-           
-            
-          <AppBar position="static">
-            <Toolbar>
-        <Typography variant="h5"
-            component="div"
-            sx={{flexGrow: 0.5, display: { xs: 'none', sm: 'block' } }}>
-         R.DINESH KUMAR
-        </Typography>
+          <div className="contain">
+              {/* Bootstrap Nav */} 
+       
+      
+
+            <nav>
+           <Navbar/>
+        {/* <div className="nav-head">R.DINESH KUMAR</div>
         
-        <Stack direction="row" spacing={2}>
-        <Button variant="contained" onClick={()=>navigate("/Home")}>
-        <Typography variant="h8" color="white" component="div" >
+        <ul className="menu-s">
+        <li className="home"><button className="nav-btn" onClick={()=>navigate("/Home")}>
         Home
-        </Typography></Button>
-        <Button variant="contained" onClick={()=>navigate("/Education")}>
-        <Typography variant="h8" color="white" component="div" >
-        Educations
-        </Typography></Button>
-        <Button variant="contained" onClick={()=>navigate("/skills")}>
-        <Typography variant="h8" color="white" component="div" >
-        Skills
-        </Typography></Button>
-        <Button variant="contained" onClick={()=>navigate("/projects")}>
-        <Typography variant="h8" color="white" component="div" >
+        </button></li>
+        
+        <li><button className="nav-btn" onClick={()=>navigate("/Education")}>
+         Educations
+        </button></li>
+        
+        <li><button className="nav-btn" onClick={()=>navigate("/skills")}>
+         Skills
+        </button></li>
+        
+        <li><button className="nav-btn" onClick={()=>navigate("/projects")}>
         Projects
-        </Typography></Button>
-        <Button variant="contained" onClick={()=>navigate("/biodata")}>
-        <Typography variant="h8" color="white" component="div" >
+        </button></li>
+        
+        <li><button className="nav-btn" onClick={()=>navigate("/biodata")}>
         Bio-Data
-        </Typography></Button>
-        <Button variant="contained" onClick={()=>navigate("/contactdetails")}>
-        <Typography variant="h8" color="white" component="div" >
+        </button></li>
+        
+        <li><button className="nav-btn" onClick={()=>navigate("/contactdetails")}>
         Contact Details
-        </Typography></Button>
-        </Stack>
-      </Toolbar>
-    </AppBar>
-    </header>
+       </button></li>
+
+       
+       </ul>*/}
+       </nav> 
+
     <div className="main-container">
-            <main className="items">
+            <main className="items"> 
                 <h1>{Title}</h1>
-                <h3>{Description}</h3>
-                <div className="contents">
+                <h3 class="d-flex justify-content-center">
                     {children}
-                </div>
+                </h3>
+                <h3>{Description}</h3>
+                
             </main>
           </div>
           </div>
@@ -60,3 +59,55 @@ function Headernav({Title,Description,children}) {
   }
   
   export default Headernav;
+
+
+  function Navbar(){
+    const navigate = useNavigate();
+    return(
+   <div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand ps-5" href="#">R.DINESH KUMAR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start text-bg-dark bg-primary bg-opacity-45 border-2 border-primary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Resume Tabs</h5>
+        <button type="button" class="btn-close btn-close-white btn-border-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-4 mx-6">
+          <li class="nav-item d-flex justify-content-center">
+            <button type="button" class="nav-link active mx-2" aria-current="page" onClick={()=>navigate("/Home")}>Home</button>
+          </li>
+          <li class="nav-item d-flex justify-content-center mx-2" aria-current="">
+            <button type="button" class="nav-link" onClick={()=>navigate("/Education")}>Education</button>
+          </li>
+          <li class="nav-item d-flex justify-content-center mx-2">
+            <button type="button" class="nav-link" onClick={()=>navigate("/skills")}>
+         Skills
+        </button></li>
+        
+        <li class="nav-item d-flex justify-content-center mx-2">
+          <button type="button" class="nav-link" onClick={()=>navigate("/projects")}>
+        Projects
+        </button></li>
+        
+        <li class="nav-item d-flex justify-content-center mx-2">
+          <button type="button" class="nav-link" onClick={()=>navigate("/biodata")}>
+        Contact
+        </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> 
+   </div>
+    );
+  }
+
+ 
+
+
+  

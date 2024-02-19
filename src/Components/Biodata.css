@@ -1,0 +1,85 @@
+
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+:root{
+    --shadow: 0.5rem 1rem rgba(0,0,0,.5);
+    --blue:#0D99FF;
+    --blue-light: #CFEBFF;
+    --blue-dark: #0A7ACC;
+    --rounded: .25rem;
+    --rounded-md: .5rem;
+}
+
+.contact{
+    width: 85%;
+    padding: 1.5rem;
+    border-radius: var(--rounded-md);
+    margin-bottom: 40px;
+}
+.contact-title h5{
+      font-size: 25px;
+      font-weight: bold;
+}
+.contact-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-description{
+     margin-bottom: 2rem;
+}
+.form-group{
+  margin-bottom: 1.5rem;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+input, textarea{
+    width: 100%;
+    padding: .2rem .2rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: var(--rounded);
+    border: 1px solid #bbb;
+}
+input:focus,
+textarea:focus{
+    border-color: var(--blue);
+    box-shadow: 0 0 0 .25rem var(--blue-light);
+}
+label{
+    margin-bottom: .25rem;
+    display: inline-block;
+}
+.btn-submit{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: var(--rounded);
+    background-color: var(--blue);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.btn-submit:hover{
+    background-color: var(--blue-dark);
+}
+.btn-submit:focus,
+.btn-submit:active{
+    box-shadow: 0 0 0 .25rem var(--blue-light);
+}
+@media(max-width:550px){
+    .contact{
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: var(--rounded-md);
+        margin-bottom: 20px;
+    }
+    .Text-style{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+}
