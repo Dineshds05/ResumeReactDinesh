@@ -38,7 +38,10 @@ const Footer = () => {
            <p><FaEnvelope/> dineshbsc884@gmail.Com</p>
            <p><FaPrint/> +918838464921</p>
            </div>
-           <div class="col-md-3 text-bottom"><p>@{new Date().getFullYear()} Terms And Conditions</p></div>
+           <div class="col-md-3 text-bottom">
+            <p>@{new Date().getFullYear()} Terms And Conditions</p>
+            <p class="d-flex gap-3 justify-content-center"><FaHome/> <FaPhoneAlt/> <FaEnvelope/> <FaPrint/></p>
+            </div>
         </div>
     </div>
   )

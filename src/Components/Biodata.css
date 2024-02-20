@@ -19,6 +19,7 @@ body{
     padding: 1.5rem;
     border-radius: var(--rounded-md);
     margin-bottom: 40px;
+    margin: auto;
 }
 .contact-title h5{
       font-size: 25px;

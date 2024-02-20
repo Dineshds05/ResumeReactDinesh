@@ -1,0 +1,9 @@
+.home-img img{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+.home-img{
+    display: flex;
+    justify-content: center;
+}
