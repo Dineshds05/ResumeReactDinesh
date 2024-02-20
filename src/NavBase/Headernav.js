@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "../NavBase/nav.css";
+import "../NavBase/Navbar.css";
 
 
 function Headernav({Title,Description,children}){
