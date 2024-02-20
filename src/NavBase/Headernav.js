@@ -74,9 +74,9 @@ return(
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
 <div class="offcanvas-header">
 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Resume Tabs</h5>
-<button type="button" class="btn-close text-reset btn-close-white btn-border-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<button type="button" class="btn-close text-reset btn-close-dark btn-border-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
-<div class="offcanvas-body">
+<div class="offcanvas-body backgroundbg">
 <ul class="navbar-nav justify-content-end flex-grow-1 pe-4 mx-6">
 <li class="nav-item d-flex justify-content-center">
 <button type="button" class="nav-link active mx-2" aria-current="page" onClick={()=>navigate("/Home")}>Home</button>
